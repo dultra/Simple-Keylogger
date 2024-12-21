@@ -6,7 +6,7 @@ Este é um exemplo simples de keylogger feito em Python para fins educacionais. 
 
 ## Requisitos
 
-- Python 3.x
+- Python 
 - Biblioteca `pynput`
 
 Instale a biblioteca com:
